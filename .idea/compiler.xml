@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-api" />
         <module name="springcloud-provide-dept-8001" />
+        <module name="springcloud-consumer-dept-8080" />
       </profile>
     </annotationProcessing>
   </component>
