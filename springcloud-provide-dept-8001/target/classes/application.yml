@@ -17,3 +17,16 @@ spring:
     url: jdbc:mysql://localhost:3306/springcloudolddb01?useUnicode=true&characterEncoding=utf-8
     username: root
     password: "0000"
+
+# Eureka 的配置  服务注册到那里
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    instance-id: springcloud-povider-dept8001  # 修改Eureka上的默认描述信息 !
+
+# info 配置
+info:
+  app.name: Tang-SpringCloud
+  compony.name: blog.tang.com
