@@ -10,7 +10,7 @@ mybatis:
 # spring的配置
 spring:
   application:
-    name: springcloud-provide-dept
+    name: springcloud-provide-dept   # 三个服务名称一致
   datasource:
     type:  com.alibaba.druid.pool.DruidDataSource # 数据源
     driver-class-name: com.mysql.jdbc.Driver

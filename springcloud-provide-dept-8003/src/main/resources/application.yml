@@ -1,0 +1,32 @@
+server:
+  port: 8003
+
+# mybatis 配置
+mybatis:
+  type-aliases-package: com.tang.springcloud.pojo
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+# spring的配置
+spring:
+  application:
+    name: springcloud-provide-dept
+  datasource:
+    type:  com.alibaba.druid.pool.DruidDataSource # 数据源
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springcloudolddb03?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: "0000"
+
+# Eureka 的配置  服务注册到那里
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
+  instance:
+    instance-id: springcloud-povider-dept8003  # 修改Eureka上的默认描述信息 !
+
+# info 配置
+info:
+  app.name: Tang-SpringCloud
+  compony.name: blog.tang.com
