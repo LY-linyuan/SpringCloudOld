@@ -1,10 +1,8 @@
-package com.tang.springcloud;
+package com.tang.springcloud.com.tang.springcloud;
 
-import com.tang.myrule.TangRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
 /**
  * @Author 临渊
