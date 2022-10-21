@@ -24,8 +24,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
   instance:
-    instance-id: springcloud-povider-dept8001  # 修改Eureka上的默认描述信息 !
-    prefer-ip-address: true  # true 可以显示服务的IP
+    instance-id: springcloud-povider-dept-hystrix-8001  # 修改Eureka上的默认描述信息 !
 
 # info 配置
 info:
