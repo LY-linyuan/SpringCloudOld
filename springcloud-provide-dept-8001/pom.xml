@@ -13,6 +13,13 @@
 
     <dependencies>
 
+        <!--Hystrix依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+            <version>1.4.6.RELEASE</version>
+        </dependency>
+
         <!--EUREKA-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
