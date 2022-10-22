@@ -14,10 +14,10 @@ import java.util.List;
  */
 
 @Component
-@FeignClient(value = "SPRINGCLOUD-PROVIDE-DEPT")
+@FeignClient(value = "SPRINGCLOUD-PROVIDE-DEPT", fallbackFactory = DeptClientServiceFallBackFactory.class) //fallbackFactory指定降级配置类
 public interface DeptClientService {
 
-    @GetMapping("/dept/get{id}")
+    @GetMapping("/dept/get/{id}")
     Dept queryById(@PathVariable("id") Long id);
 
     @GetMapping("/dept/list")
